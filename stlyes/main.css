@@ -1,0 +1,109 @@
+:root {
+    --price-page-color: #222222;
+    --default-page-color:#282829;
+    --header-color:#222222;
+    --header-darkened-color: #1A1A1A; 
+    --default-text-color:white;
+
+    --footer: #D5C9BE;
+    --footer-bg-color: #222222;
+
+    --padding: 10px;
+    --font-size: 16px;
+
+    --button-bg-color: white;
+    --button-color: #282829;
+    --button-hover-bg-color:  #47A76A;
+    
+    --form-title-color: #38535D;
+    --secondary-color: #55565A;
+    --form-input-border: #D5C9BE;
+    --submit-form-color: 	#1E90FF;
+
+    --scrollbar-color: #D8CFC1;
+    --scrollbar-color-hover: #E5D9CE;
+    --scrollbar-border-color: #282829;
+    --scrollbar-track-color: #1A1A1A;
+
+    --fs-1: calc(1rem + 4*((100vw - 320px)/1600)); /*20px*/
+    --fs-price-large: calc(1.5rem + 56*((100vw - 320px)/1600)); /*80px*/
+    --fs-price-medium: calc(1.25rem + 30*((100vw - 320px)/1600)); /*50px*/
+    --fs-promo-spacing: calc(1.5rem + 10*((100vh - 300px)/900)); /*34px*/
+    --fs-number: calc(1.125rem + 22*((100vw - 320px)/1600)); /*40px*/
+    --fs-promo-title: calc(0.875rem + 10*((100vw - 320px)/1600)); /*24px*/
+    --fs-form-title: calc(1.5rem + 30*((100vw - 320px)/1600)); /*54px*/
+    --fs-form: calc(1rem + 8*((100vw - 320px)/1600)); /*24px*/
+    --fs-form-checkbox: calc(1rem + 3*((100vw - 320px)/1600)); /*19px*/
+    --fs-benefits-order: calc(1rem + 8*((100vw - 320px)/1600)); /*24px*/
+    --fs-benefits-item: calc(0.75rem + 12*((100vw - 320px)/1600)); /*24px*/
+    --fs-footer-lorem: calc(1.5rem + 12*((100vw - 320px)/1600)); /*36px*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color); 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color); 
+    border-radius: 5px; 
+    border: 2px solid var(--scrollbar-border-color); 
+    transition: background 0.3s ease; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-color-hover);
+  }
+
+section{
+    background-color: var(--default-page-color);
+}
+
+@font-face {
+    font-family: 'Prata';
+    src: url('fonts/Prata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 100%;
+    max-width: 100%;
+}
+.prata{
+    font-family: Prata;
+}
+
+.lorem{
+    font-size: 2.25rem;
+    font-family: Prata;
+}
+.link_animation{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.link_animation:hover {
+    background-size: 100% 2px;
+}

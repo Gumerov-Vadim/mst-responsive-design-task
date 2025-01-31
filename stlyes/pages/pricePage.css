@@ -1,0 +1,77 @@
+.price-page{
+    background-color: var(--price-page-color);
+    position: relative;
+    padding: 0 0 50px 0;
+}
+.price-page *:not(button):not(.promo-list__item):not(.number):not(.promo-list__item-title) {
+    background-color: inherit;
+}
+.price-page>.content{
+    padding:  320px 0 0 162px;
+}
+.price-page>img{
+    object-fit: cover;
+    max-width: 40vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100%;
+}
+.price-list{
+    font-size: 1.5rem;
+}
+.price-page>.content>.description>p:first-child{
+    font-size: var(--fs-price-large);
+    font-weight: 400;
+    line-height: 96px;
+}
+.price-page>.content>.description>p:last-child{
+    margin-top: 1.25rem;
+    font-size: var(--fs-price-medium);
+    font-weight: 400;
+}
+.price-page>.content>button{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.promo-list__item-icon{
+    background-image: url(../../images/list/tick.png);
+    background-repeat: no-repeat ;
+    background-size: contain;
+
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+}
+.promo-list{
+    margin-top: 3.125rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.promo-list__item{
+    vertical-align: middle;
+    width: max-content;
+    padding: 0 17px 0 0;
+    background-color: var(--default-page-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 17px;
+}
+.promo-list__item+.promo-list__item {
+    margin-top: var(--fs-promo-spacing);
+}
+.number{
+    vertical-align: middle;
+    letter-spacing: 0.1rem;
+    font-size: var(--fs-number);
+    padding: 0 6px;
+    background-color: transparent;
+}
+.promo-list__item-title{
+    background-color: #262627;
+    line-height: 150%;
+    font-size: var(--fs-promo-title);
+}
