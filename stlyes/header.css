@@ -14,6 +14,10 @@ header{
 header *{
     background-color: inherit;
 }
+.lorem{
+    font-size: 2.25rem;
+    font-family: Prata;
+}
 .topnav>ul{
     display: flex;
 }
@@ -26,4 +30,22 @@ header *{
     font-size: 1rem;
     letter-spacing: 0.05em;
     font-weight: 400;
+}
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    header{
+        padding: 1.875rem calc(100vw - 46% - 5.09375rem) 0 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        padding: 0.5rem 1rem 0 1rem;
+        flex-direction: column;
+        height: 6rem;
+    }
+    .topnav{
+        width: 100%;
+    }
+    .topnav>ul{
+        justify-content: space-between;
+    }
 }

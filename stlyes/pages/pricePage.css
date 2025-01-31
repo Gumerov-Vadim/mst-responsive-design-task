@@ -8,6 +8,7 @@
 }
 .price-page>.content{
     padding:  320px 0 0 162px;
+    width: calc(100% - 40vw);
 }
 .price-page>img{
     object-fit: cover;
@@ -75,3 +76,18 @@
     line-height: 150%;
     font-size: var(--fs-promo-title);
 }
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .price-page>.content{
+        padding: 10rem 5rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .price-page>.content{
+        padding: 10rem 5rem;
+        width: 100%;
+    }
+    .price-page>img{
+        display: none;
+    }
+}
+
