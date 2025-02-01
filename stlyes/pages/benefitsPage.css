@@ -79,5 +79,16 @@
     }
     .benefits-page>.content{
         width: 100%;
+        padding: 0 1rem;
+    }
+    .benefits-list__item-icon{
+        height: 2.5rem;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .benefits-list__item-icon{
+        height: 1.25rem;
     }
 }
+

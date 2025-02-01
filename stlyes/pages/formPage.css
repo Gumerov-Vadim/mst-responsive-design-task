@@ -127,4 +127,9 @@
         padding: 3rem 4rem;
     }
 }
+@media screen and (max-width: 480px) {
+    .form-page>.content{
+        padding: 3rem 1rem;
+    }
+}
 

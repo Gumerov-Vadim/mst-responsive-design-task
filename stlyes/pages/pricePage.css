@@ -78,7 +78,7 @@
 }
 @media screen and (min-width:992px) and (max-width: 1200px) {
     .price-page>.content{
-        padding: 10rem 5rem;
+        padding: 10rem 0 10rem 5rem;
     }
 }
 @media screen and (max-width: 992px) {
@@ -90,4 +90,13 @@
         display: none;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .price-page>.content{
+        padding: 6rem 0 10rem 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .price-page>.content{
+        padding: 3rem 1rem;
+    }
+}

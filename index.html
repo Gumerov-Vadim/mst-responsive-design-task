@@ -15,6 +15,12 @@
 </head>
 <body>
     <header>
+        <div class="container" onclick="burgerMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
         <a class="lorem" href="#">
             LOREM
         </a>
@@ -108,12 +114,12 @@
                 <br/>
                 sed do eiusmod </p>
             <div class="form-container">
-                <form>
+                <form id="contactForm" action="/api/submit" method="POST">
                     <div class="form-fields">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="E-mail" required>
+                        <input type="text" name="userName" placeholder="Name" required>
+                        <input type="email" name="userEmail" placeholder="E-mail" required>
                         <div class="checkbox-container">
-                            <input type="checkbox" id="privacy" required>
+                            <input type="checkbox" name="privacyAccept" id="privacy" required>
                             <label for="privacy">I accept Privacy Policy</label>
                         </div>
                         <button type="submit" class="button submit-form">
@@ -168,6 +174,8 @@
         </div>
     </footer>
  </main>
- <script src="scripts/index.js"></script>
+ <script src="scripts/FormHandler.js"></script>
+ <script src="scripts/MenuToggleEffect.js"></script>
+ <script src="scripts/HeaderScrollEffect.js"></script>
 </body>
 </html>
