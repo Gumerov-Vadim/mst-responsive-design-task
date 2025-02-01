@@ -18,7 +18,7 @@
     height: 100%;
     filter: sepia(0.45) brightness(1.5) blur(0.5px) ;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position: calc(50% + 250px) 50%;
     content: "";
     border-radius: 30px;
@@ -33,7 +33,8 @@
     bottom: 0;
     right: 4rem;
     width: 640px;
-    height: 800px;
+    /* height: 800px; */
+    height: 970px;
     content: "";
     transform: scaleX(-1);
     overflow: hidden;
@@ -64,16 +65,14 @@
     max-width: 780px;
 }
 
-.form-fields input[type="text"],
-.form-fields input[type="email"] {
+.form-fields input:not([type="checkbox"]) {
     padding: 1.46875rem;
     border: 1px solid var(--form-input-border);
     border-radius: 4px;
     font-size: var(--fs-form);
     color: var(--secondary-color);
 }
-.form-fields input[type="text"]::placeholder,
-.form-fields input[type="email"]::placeholder{
+.form-fields input:not([type="checkbox"])::placeholder{
     font-size: var(--fs-form);
     font-weight: 400;
     color: var(--secondary-color);

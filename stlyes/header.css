@@ -2,9 +2,10 @@ header{
     z-index: 2;
     top: 0;
     height: 5.5rem;
-    padding: 1.875rem calc(100vw - 46% - 5.09375rem) 0 10.1875rem;
+    /* padding: 1.875rem calc(100vw - 46% - 5.09375rem) 0 10.1875rem; */
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     width: 100vw;
@@ -20,6 +21,7 @@ header *{
 }
 .topnav>ul{
     display: flex;
+    flex-wrap: wrap;
 }
 .topnav>ul>li{
     list-style: none;
@@ -30,12 +32,13 @@ header *{
     font-size: 1rem;
     letter-spacing: 0.05em;
     font-weight: 400;
+    text-shadow: 0 0 10px var(--header-color);
 }
-@media screen and (min-width:768px) and (max-width: 1200px) {
+/* @media screen and (min-width:768px) and (max-width: 1200px) {
     header{
         padding: 1.875rem calc(100vw - 46% - 5.09375rem) 0 5rem;
     }
-}
+} */
 
 header .container {
     display: none;
@@ -63,9 +66,13 @@ header .container {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 992px) {
     header{
         padding: 1rem 2rem;
+    }
+  } */
+  @media screen and (max-width: 768px) {
+    header{
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
