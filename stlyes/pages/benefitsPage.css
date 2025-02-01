@@ -18,11 +18,9 @@
 }
 .benefits-page::before{
     left: 0;
-    background-image: url(../../images/3.png);
 }
 .benefits-page::after{
     right: 0;
-    background-image: url(../../images/1.png);
 }
 .benefits-page>.content{
     width: calc(100% - 60%);
